@@ -28,14 +28,19 @@ html {
 }
 
 body {
+  /* Topography BG Settings  */
   /* background-image: url("./images/topography.svg"), linear-gradient(110deg, #f93d66, #6d47d9); */
+  /* background-attachment: fixed; */
+  /* background-size: 340px, auto; */
+
+  /* Slanted Settings  */
   background-image: url("./images/slanted-gradient.svg");
   background-attachment: fixed;
   background-size: cover;
-  /* background-size: 340px, auto; */
+
+  /* Normal Settings  */
   min-height: calc(100vh - 100px);
   margin: 50px;
-  /* background-attachment: fixed; */
   color: var(--black);
   letter-spacing: -1px;
 }
