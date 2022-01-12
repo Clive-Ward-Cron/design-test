@@ -1,0 +1,41 @@
+/* Base Vars */
+:root {
+  --black: #272727;
+}
+
+html {
+  /* CSS Reset  */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* A system font stack so things load nice and quick! */
+  /* Borrowed From WesBos  */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 900;
+  font-size: 10px;
+  color: var(--black);
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+}
+
+/* More CSS Reset  */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: inherit;
+  padding: inherit;
+}
+
+body {
+  /* background-image: url("./images/topography.svg"), linear-gradient(110deg, #f93d66, #6d47d9); */
+  background-image: url("./images/slanted-gradient.svg");
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-size: 340px, auto; */
+  min-height: calc(100vh - 100px);
+  margin: 50px;
+  /* background-attachment: fixed; */
+  color: var(--black);
+  letter-spacing: -1px;
+}
