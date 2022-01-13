@@ -3,6 +3,8 @@
   --black: #272727;
   --white: #fafafa;
   --gray: slategray;
+
+  --border-radius: 25px;
 }
 
 html {
@@ -25,8 +27,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  margin: inherit;
-  padding: inherit;
 }
 
 body {
@@ -47,10 +47,42 @@ body {
   letter-spacing: -1px;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: minmax(250px, 350px) 1fr;
+  position: relative;
+}
+
 .sidebar {
   background: var(--gray);
+  width: 100%;
+  padding: 20px;
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  display: grid;
+  gap: 20px;
+  align-content: center;
+}
+
+.logo--container {
+  width: 100%;
+  height: 250px;
+}
+
+.logo {
+  background-size: contain;
+  margin: 0 auto;
 }
 
 .content {
   background: var(--white);
+  color: var(--black);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border-radius: var(--border-radius);
+}
+
+.content.slide {
+  position: initial;
 }
