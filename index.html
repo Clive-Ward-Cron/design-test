@@ -10,12 +10,14 @@
   <body>
     <div class="wrapper">
       <div class="sidebar">
-        <div class="logo--container">
+        <span class="logo--container">
           <img src="https://source.unsplash.com/random/100x100/?logo" alt="" class="logo" />
           <h1 class="logo--header">Gig Share</h1>
-        </div>
+        </span>
         <div class="profile">
-          <img src="https://source.unsplash.com/random/250x250/?user" alt="" class="avatar" />
+          <div class="avatar--container">
+            <img src="https://source.unsplash.com/random/250x250/?user" alt="" class="avatar" />
+          </div>
           <h2 class="name">Some Person</h2>
         </div>
         <nav class="navbar">
@@ -60,7 +62,7 @@
           <p><span class="red">185 GB</span></p>
         </div>
         <div class="search">
-          <span class="icon">🔍</span><input type="text" name="" id="" placeholder="Search..." />
+          <span class="icon">🔍</span><input type="text" name="" id="" placeholder="Search Something..." />
         </div>
         <button class="notifications icon">🔔</button>
         <button class="logout icon">🚨</button>
@@ -90,21 +92,32 @@
             <p></p>
           </div>
         </div>
-        <div class="storage">
-          <h2>Storage</h2>
-          <div class="chart">37%</div>
+        <div class="storage card">
+          <h2 class="card-heading">Storage <span class="card-setting">:</span></h2>
+
+          <div class="chart"></div>
           <ul class="breakdown">
-            <li class="breakdown--info">Documents</li>
-            <li class="breakdown--info">Images</li>
-            <li class="breakdown--info">Videos</li>
-            <li class="breakdown--info">Free</li>
+            <li class="breakdown--info">
+              <div class="circle yellow"></div>
+              <h3>Documents</h3>
+            </li>
+            <li class="breakdown--info">
+              <div class="circle blue"></div>
+              <h3>Images</h3>
+            </li>
+            <li class="breakdown--info">
+              <div class="circle green"></div>
+              <h3>Videos</h3>
+            </li>
+            <li class="breakdown--info">
+              <div class="circle brown"></div>
+              <h3>Free</h3>
+            </li>
           </ul>
         </div>
-        <div class="last_file">
-          <div class="heading">
-            <h2>Last File</h2>
-            <span>🔽</span>
-          </div>
+        <div class="last_file card">
+          <h2 class="card-heading">Last File <span class="card-setting">&#x1f53b;</span></h2>
+
           <div class="file">
             <span class="icon"></span>
             <h3></h3>
