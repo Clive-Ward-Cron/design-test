@@ -11,19 +11,12 @@
     <div class="wrapper">
       <div class="sidebar">
         <div class="logo--container">
-          <img
-            src="https://source.unsplash.com/random/400x200/?logo"
-            alt=""
-            class="logo"
-          />
+          <img src="https://source.unsplash.com/random/100x100/?logo" alt="" class="logo" />
+          <h1 class="logo--header">Gig Share</h1>
         </div>
         <div class="profile">
-          <img
-            src="https://source.unsplash.com/random/250x250/?user"
-            alt=""
-            class="avatar"
-          />
-          <h2 class="name">Clive Ward-Cron</h2>
+          <img src="https://source.unsplash.com/random/250x250/?user" alt="" class="avatar" />
+          <h2 class="name">Some Person</h2>
         </div>
         <nav class="navbar">
           <ul class="nav">
@@ -31,26 +24,43 @@
             <li class="nav--item">
               <span class="icon">📁</span>
               Folders
-              <ul class="nested">
-                <li class="nav--item"></li>
-                <li class="nav--item"></li>
-                <li class="nav--item"></li>
+              <span class="icon right">🔽</span>
+              <ul class="subnav">
+                <li class="nav--item">
+                  <div class="box green icon"></div>
+                  Marketing
+                </li>
+                <li class="nav--item">
+                  <div class="box yellow icon"></div>
+                  Design
+                </li>
+                <li class="nav--item">
+                  <div class="box red icon"></div>
+                  Webflow
+                </li>
               </ul>
             </li>
             <li class="nav--item"><span class="icon">🚩</span>Favorites</li>
             <li class="nav--item"><span class="icon">⚙️</span>Settings</li>
           </ul>
         </nav>
-        <div class="upload"></div>
+        <div class="upload">
+          <div class="inner-upload">
+            <span class="upload-header">
+              <h3>Add files</h3>
+              <p>Up to 20 GB</p>
+            </span>
+            <span class="icon">➕</span>
+          </div>
+        </div>
       </div>
       <div class="content">
         <div class="overview">
-          <h1>overview</h1>
-          <span>185</span>
+          <h2>Overview</h2>
+          <p><span class="red">185 GB</span></p>
         </div>
         <div class="search">
-          <span class="icon">🔍</span
-          ><input type="text" name="" id="" placeholder="Search..." />
+          <span class="icon">🔍</span><input type="text" name="" id="" placeholder="Search..." />
         </div>
         <button class="notifications icon">🔔</button>
         <button class="logout icon">🚨</button>
@@ -58,9 +68,7 @@
         <div class="hero">
           <div class="cta">
             <h1 class="cta--header">Manage Your Folders</h1>
-            <p class="cta--info">
-              Create folders to sort files and have quick access to documents
-            </p>
+            <p class="cta--info">Create folders to sort files and have quick access to documents</p>
           </div>
           <div class="add_item">➕</div>
           <div class="item">
