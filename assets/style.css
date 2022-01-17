@@ -326,6 +326,7 @@ p {
   z-index: 3;
   left: 0;
   width: 100%;
+  min-width: 1018px;
   margin: 0 auto;
   padding: 5rem 4rem;
   border: 1px solid rgba(242, 243, 244, 255);
@@ -541,6 +542,7 @@ button.icon {
 .storage {
   grid-area: st;
   display: grid;
+  min-height: 307px;
 }
 
 .storage .chart {
