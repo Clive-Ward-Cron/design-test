@@ -343,16 +343,15 @@ p {
     "h  h   h   h   h h h   h   h   h   h   h"
     "st st  st  st  . lf lf  lf  lf  lf  lf  lf"
     "st st  st  st  . lf lf  lf  lf  lf  lf  lf";
-  transition: all 3s ease;
+  transition: all var(--slide-time) linear;
 }
 
-.content.slide {
-  position: relative;
-  left: 0px;
+.content.slide-open {
+  width: 80%;
+  left: 280px;
 }
 
-/* Keep the burger in the corner of the content box  */
-.wrapper .content.slide {
+.content-open {
   position: relative;
 }
 
